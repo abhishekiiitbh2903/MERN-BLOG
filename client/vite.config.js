@@ -11,5 +11,7 @@ export default defineConfig({
       },
     },
   },
+  // After enabling proxy , the frontend url will be converted to localhost:3000 from localhost:5000 and thus
+  // we won't face any error of cross origin policy
   plugins: [react()],
 })
