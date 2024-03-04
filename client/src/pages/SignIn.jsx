@@ -10,6 +10,13 @@ import {
 export default function SignIn() {
   const [formData, setFormData] = useState({});
   const { loading, error: errorMessage } = useSelector((state) => state.user);
+  // -------For Revision------
+//   This code snippet utilizes the `useSelector` hook from the React Redux library to access specific pieces of state from the Redux store. Here, it's extracting the `loading` and `error` properties from the `user` slice of the Redux store state. 
+
+// - `loading`: This variable holds the current loading state, indicating whether a certain operation (like fetching data) is in progress.
+// - `errorMessage`: This variable holds the error message from the Redux store state, aliased as `errorMessage` for clarity.
+
+// This pattern is often used in React components to access and use state from the Redux store. By destructuring the return value of `useSelector`, we can easily access the desired state variables and use them within the component's render function or other logic.
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleChange = (e) => {
