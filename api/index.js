@@ -4,6 +4,8 @@ import dotenv from 'dotenv'
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import { errorHandler } from './utils/error.js';
+import cookieParser from 'cookie-parser';
+
 dotenv.config();
 mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log("MongoDb is Connected")
@@ -15,6 +17,7 @@ mongoose.connect(process.env.MONGO_URI).then(()=>{
 
 const app =express();
 app.use(express.json());
+app.use(cookieParser());
 // app.get("/send",(req,res)=>{
 //     res.send("Hello World");
 // })
