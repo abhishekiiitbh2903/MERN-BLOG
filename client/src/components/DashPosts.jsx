@@ -9,7 +9,7 @@ export default function DashPosts() {
     const [showMore, setShowMore] = useState(true);
     const [showModal, setShowModal] = useState(false);
     const [postIdToDelete, setPostIdToDelete] = useState('');
-    // console.log(userPosts);
+    console.log(userPosts);
     useEffect(() => {
       const fetchPosts = async () => {
         try {
@@ -116,6 +116,7 @@ export default function DashPosts() {
                         setShowModal(true);
                         setPostIdToDelete(post._id);}}
                     >
+                    {/* console.log(post._id) */}
                       Delete
                     </span>
                   </Table.Cell>
