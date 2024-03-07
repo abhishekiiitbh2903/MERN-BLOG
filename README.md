@@ -30,9 +30,9 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/mern-blog-web-app.git
+git clone https://github.com/yourusername/MERN-BLOG.git
 
-cd mern-blog-web-app
+cd MERN-BLOG
 cd client && npm install
 cd ../server && npm install
 ```
