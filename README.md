@@ -37,7 +37,8 @@ cd client && npm install
 cd ../server && npm install
 ```
 
-Contributing
+###Contributing
+
 Contributions are welcome! If you'd like to contribute to this project, please follow the standard GitHub flow: fork the repository, make your changes, and submit a pull request.
 Let's see What we can change 😊
 
